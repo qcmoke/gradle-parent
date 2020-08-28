@@ -6,7 +6,7 @@ package com.qcmoke.grpc.proto;
 /**
  * Protobuf type {@code UserResponse}
  */
-public  final class UserResponse extends
+public final class UserResponse extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:UserResponse)
     UserResponseOrBuilder {
@@ -16,6 +16,13 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private UserResponse() {
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new UserResponse();
   }
 
   @java.lang.Override
@@ -31,7 +38,6 @@ private static final long serialVersionUID = 0L;
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
-    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -83,7 +89,9 @@ private static final long serialVersionUID = 0L;
   private boolean isSuccess_;
   /**
    * <code>bool isSuccess = 1;</code>
+   * @return The isSuccess.
    */
+  @java.lang.Override
   public boolean getIsSuccess() {
     return isSuccess_;
   }
@@ -394,12 +402,16 @@ private static final long serialVersionUID = 0L;
     private boolean isSuccess_ ;
     /**
      * <code>bool isSuccess = 1;</code>
+     * @return The isSuccess.
      */
+    @java.lang.Override
     public boolean getIsSuccess() {
       return isSuccess_;
     }
     /**
      * <code>bool isSuccess = 1;</code>
+     * @param value The isSuccess to set.
+     * @return This builder for chaining.
      */
     public Builder setIsSuccess(boolean value) {
       
@@ -409,6 +421,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>bool isSuccess = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearIsSuccess() {
       

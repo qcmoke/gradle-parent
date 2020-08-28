@@ -9,6 +9,7 @@ public interface UserResponseOrBuilder extends
 
   /**
    * <code>bool isSuccess = 1;</code>
+   * @return The isSuccess.
    */
   boolean getIsSuccess();
 }

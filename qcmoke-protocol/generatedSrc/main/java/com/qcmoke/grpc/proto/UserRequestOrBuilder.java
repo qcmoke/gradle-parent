@@ -9,6 +9,7 @@ public interface UserRequestOrBuilder extends
 
   /**
    * <code>int32 id = 1;</code>
+   * @return The id.
    */
   int getId();
 }

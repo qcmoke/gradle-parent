@@ -9,40 +9,48 @@ public interface UserDataOrBuilder extends
 
   /**
    * <code>int32 id = 1;</code>
+   * @return The id.
    */
   int getId();
 
   /**
    * <code>string name = 2;</code>
+   * @return The name.
    */
   java.lang.String getName();
   /**
    * <code>string name = 2;</code>
+   * @return The bytes for name.
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
    * <code>string sex = 3;</code>
+   * @return The sex.
    */
   java.lang.String getSex();
   /**
    * <code>string sex = 3;</code>
+   * @return The bytes for sex.
    */
   com.google.protobuf.ByteString
       getSexBytes();
 
   /**
    * <code>int32 age = 4;</code>
+   * @return The age.
    */
   int getAge();
 
   /**
    * <code>string remark = 5;</code>
+   * @return The remark.
    */
   java.lang.String getRemark();
   /**
    * <code>string remark = 5;</code>
+   * @return The bytes for remark.
    */
   com.google.protobuf.ByteString
       getRemarkBytes();

@@ -6,7 +6,7 @@ package com.qcmoke.grpc.proto;
 /**
  * Protobuf type {@code UserRequest}
  */
-public  final class UserRequest extends
+public final class UserRequest extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:UserRequest)
     UserRequestOrBuilder {
@@ -16,6 +16,13 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private UserRequest() {
+  }
+
+  @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new UserRequest();
   }
 
   @java.lang.Override
@@ -31,7 +38,6 @@ private static final long serialVersionUID = 0L;
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
-    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -83,7 +89,9 @@ private static final long serialVersionUID = 0L;
   private int id_;
   /**
    * <code>int32 id = 1;</code>
+   * @return The id.
    */
+  @java.lang.Override
   public int getId() {
     return id_;
   }
@@ -393,12 +401,16 @@ private static final long serialVersionUID = 0L;
     private int id_ ;
     /**
      * <code>int32 id = 1;</code>
+     * @return The id.
      */
+    @java.lang.Override
     public int getId() {
       return id_;
     }
     /**
      * <code>int32 id = 1;</code>
+     * @param value The id to set.
+     * @return This builder for chaining.
      */
     public Builder setId(int value) {
       
@@ -408,6 +420,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int32 id = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearId() {
       

@@ -6,7 +6,7 @@ package com.qcmoke.grpc.proto;
 /**
  * Protobuf type {@code UserData}
  */
-public  final class UserData extends
+public final class UserData extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:UserData)
     UserDataOrBuilder {
@@ -22,6 +22,13 @@ private static final long serialVersionUID = 0L;
   }
 
   @java.lang.Override
+  @SuppressWarnings({"unused"})
+  protected java.lang.Object newInstance(
+      UnusedPrivateParameter unused) {
+    return new UserData();
+  }
+
+  @java.lang.Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return this.unknownFields;
@@ -34,7 +41,6 @@ private static final long serialVersionUID = 0L;
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
-    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -109,7 +115,9 @@ private static final long serialVersionUID = 0L;
   private int id_;
   /**
    * <code>int32 id = 1;</code>
+   * @return The id.
    */
+  @java.lang.Override
   public int getId() {
     return id_;
   }
@@ -118,7 +126,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object name_;
   /**
    * <code>string name = 2;</code>
+   * @return The name.
    */
+  @java.lang.Override
   public java.lang.String getName() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -133,7 +143,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string name = 2;</code>
+   * @return The bytes for name.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getNameBytes() {
     java.lang.Object ref = name_;
@@ -152,7 +164,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object sex_;
   /**
    * <code>string sex = 3;</code>
+   * @return The sex.
    */
+  @java.lang.Override
   public java.lang.String getSex() {
     java.lang.Object ref = sex_;
     if (ref instanceof java.lang.String) {
@@ -167,7 +181,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string sex = 3;</code>
+   * @return The bytes for sex.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getSexBytes() {
     java.lang.Object ref = sex_;
@@ -186,7 +202,9 @@ private static final long serialVersionUID = 0L;
   private int age_;
   /**
    * <code>int32 age = 4;</code>
+   * @return The age.
    */
+  @java.lang.Override
   public int getAge() {
     return age_;
   }
@@ -195,7 +213,9 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object remark_;
   /**
    * <code>string remark = 5;</code>
+   * @return The remark.
    */
+  @java.lang.Override
   public java.lang.String getRemark() {
     java.lang.Object ref = remark_;
     if (ref instanceof java.lang.String) {
@@ -210,7 +230,9 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <code>string remark = 5;</code>
+   * @return The bytes for remark.
    */
+  @java.lang.Override
   public com.google.protobuf.ByteString
       getRemarkBytes() {
     java.lang.Object ref = remark_;
@@ -598,12 +620,16 @@ private static final long serialVersionUID = 0L;
     private int id_ ;
     /**
      * <code>int32 id = 1;</code>
+     * @return The id.
      */
+    @java.lang.Override
     public int getId() {
       return id_;
     }
     /**
      * <code>int32 id = 1;</code>
+     * @param value The id to set.
+     * @return This builder for chaining.
      */
     public Builder setId(int value) {
       
@@ -613,6 +639,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int32 id = 1;</code>
+     * @return This builder for chaining.
      */
     public Builder clearId() {
       
@@ -624,6 +651,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object name_ = "";
     /**
      * <code>string name = 2;</code>
+     * @return The name.
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -639,6 +667,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 2;</code>
+     * @return The bytes for name.
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -655,6 +684,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 2;</code>
+     * @param value The name to set.
+     * @return This builder for chaining.
      */
     public Builder setName(
         java.lang.String value) {
@@ -668,6 +699,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 2;</code>
+     * @return This builder for chaining.
      */
     public Builder clearName() {
       
@@ -677,6 +709,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string name = 2;</code>
+     * @param value The bytes for name to set.
+     * @return This builder for chaining.
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -693,6 +727,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object sex_ = "";
     /**
      * <code>string sex = 3;</code>
+     * @return The sex.
      */
     public java.lang.String getSex() {
       java.lang.Object ref = sex_;
@@ -708,6 +743,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string sex = 3;</code>
+     * @return The bytes for sex.
      */
     public com.google.protobuf.ByteString
         getSexBytes() {
@@ -724,6 +760,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string sex = 3;</code>
+     * @param value The sex to set.
+     * @return This builder for chaining.
      */
     public Builder setSex(
         java.lang.String value) {
@@ -737,6 +775,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string sex = 3;</code>
+     * @return This builder for chaining.
      */
     public Builder clearSex() {
       
@@ -746,6 +785,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string sex = 3;</code>
+     * @param value The bytes for sex to set.
+     * @return This builder for chaining.
      */
     public Builder setSexBytes(
         com.google.protobuf.ByteString value) {
@@ -762,12 +803,16 @@ private static final long serialVersionUID = 0L;
     private int age_ ;
     /**
      * <code>int32 age = 4;</code>
+     * @return The age.
      */
+    @java.lang.Override
     public int getAge() {
       return age_;
     }
     /**
      * <code>int32 age = 4;</code>
+     * @param value The age to set.
+     * @return This builder for chaining.
      */
     public Builder setAge(int value) {
       
@@ -777,6 +822,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>int32 age = 4;</code>
+     * @return This builder for chaining.
      */
     public Builder clearAge() {
       
@@ -788,6 +834,7 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object remark_ = "";
     /**
      * <code>string remark = 5;</code>
+     * @return The remark.
      */
     public java.lang.String getRemark() {
       java.lang.Object ref = remark_;
@@ -803,6 +850,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string remark = 5;</code>
+     * @return The bytes for remark.
      */
     public com.google.protobuf.ByteString
         getRemarkBytes() {
@@ -819,6 +867,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string remark = 5;</code>
+     * @param value The remark to set.
+     * @return This builder for chaining.
      */
     public Builder setRemark(
         java.lang.String value) {
@@ -832,6 +882,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string remark = 5;</code>
+     * @return This builder for chaining.
      */
     public Builder clearRemark() {
       
@@ -841,6 +892,8 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <code>string remark = 5;</code>
+     * @param value The bytes for remark to set.
+     * @return This builder for chaining.
      */
     public Builder setRemarkBytes(
         com.google.protobuf.ByteString value) {

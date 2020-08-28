@@ -18,7 +18,7 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 /**
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.20.0)",
+    value = "by gRPC proto compiler (version 1.31.1)",
     comments = "Source: user.proto")
 public final class UserGrpc {
 
@@ -41,22 +41,21 @@ public final class UserGrpc {
     if ((getSaveUserMethod = UserGrpc.getSaveUserMethod) == null) {
       synchronized (UserGrpc.class) {
         if ((getSaveUserMethod = UserGrpc.getSaveUserMethod) == null) {
-          UserGrpc.getSaveUserMethod = getSaveUserMethod = 
+          UserGrpc.getSaveUserMethod = getSaveUserMethod =
               io.grpc.MethodDescriptor.<com.qcmoke.grpc.proto.UserData, com.qcmoke.grpc.proto.UserResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName(generateFullMethodName(
-                  "User", "SaveUser"))
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "SaveUser"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.qcmoke.grpc.proto.UserData.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.qcmoke.grpc.proto.UserResponse.getDefaultInstance()))
-                  .setSchemaDescriptor(new UserMethodDescriptorSupplier("SaveUser"))
-                  .build();
-          }
+              .setSchemaDescriptor(new UserMethodDescriptorSupplier("SaveUser"))
+              .build();
         }
-     }
-     return getSaveUserMethod;
+      }
+    }
+    return getSaveUserMethod;
   }
 
   private static volatile io.grpc.MethodDescriptor<com.qcmoke.grpc.proto.UserRequest,
@@ -73,29 +72,35 @@ public final class UserGrpc {
     if ((getGetUserMethod = UserGrpc.getGetUserMethod) == null) {
       synchronized (UserGrpc.class) {
         if ((getGetUserMethod = UserGrpc.getGetUserMethod) == null) {
-          UserGrpc.getGetUserMethod = getGetUserMethod = 
+          UserGrpc.getGetUserMethod = getGetUserMethod =
               io.grpc.MethodDescriptor.<com.qcmoke.grpc.proto.UserRequest, com.qcmoke.grpc.proto.UserData>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName(generateFullMethodName(
-                  "User", "GetUser"))
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetUser"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.qcmoke.grpc.proto.UserRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.qcmoke.grpc.proto.UserData.getDefaultInstance()))
-                  .setSchemaDescriptor(new UserMethodDescriptorSupplier("GetUser"))
-                  .build();
-          }
+              .setSchemaDescriptor(new UserMethodDescriptorSupplier("GetUser"))
+              .build();
         }
-     }
-     return getGetUserMethod;
+      }
+    }
+    return getGetUserMethod;
   }
 
   /**
    * Creates a new async stub that supports all call types for the service
    */
   public static UserStub newStub(io.grpc.Channel channel) {
-    return new UserStub(channel);
+    io.grpc.stub.AbstractStub.StubFactory<UserStub> factory =
+      new io.grpc.stub.AbstractStub.StubFactory<UserStub>() {
+        @java.lang.Override
+        public UserStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+          return new UserStub(channel, callOptions);
+        }
+      };
+    return UserStub.newStub(factory, channel);
   }
 
   /**
@@ -103,7 +108,14 @@ public final class UserGrpc {
    */
   public static UserBlockingStub newBlockingStub(
       io.grpc.Channel channel) {
-    return new UserBlockingStub(channel);
+    io.grpc.stub.AbstractStub.StubFactory<UserBlockingStub> factory =
+      new io.grpc.stub.AbstractStub.StubFactory<UserBlockingStub>() {
+        @java.lang.Override
+        public UserBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+          return new UserBlockingStub(channel, callOptions);
+        }
+      };
+    return UserBlockingStub.newStub(factory, channel);
   }
 
   /**
@@ -111,7 +123,14 @@ public final class UserGrpc {
    */
   public static UserFutureStub newFutureStub(
       io.grpc.Channel channel) {
-    return new UserFutureStub(channel);
+    io.grpc.stub.AbstractStub.StubFactory<UserFutureStub> factory =
+      new io.grpc.stub.AbstractStub.StubFactory<UserFutureStub>() {
+        @java.lang.Override
+        public UserFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+          return new UserFutureStub(channel, callOptions);
+        }
+      };
+    return UserFutureStub.newStub(factory, channel);
   }
 
   /**
@@ -154,19 +173,15 @@ public final class UserGrpc {
 
   /**
    */
-  public static final class UserStub extends io.grpc.stub.AbstractStub<UserStub> {
-    private UserStub(io.grpc.Channel channel) {
-      super(channel);
-    }
-
-    private UserStub(io.grpc.Channel channel,
-        io.grpc.CallOptions callOptions) {
+  public static final class UserStub extends io.grpc.stub.AbstractAsyncStub<UserStub> {
+    private UserStub(
+        io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
 
     @java.lang.Override
-    protected UserStub build(io.grpc.Channel channel,
-        io.grpc.CallOptions callOptions) {
+    protected UserStub build(
+        io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new UserStub(channel, callOptions);
     }
 
@@ -189,19 +204,15 @@ public final class UserGrpc {
 
   /**
    */
-  public static final class UserBlockingStub extends io.grpc.stub.AbstractStub<UserBlockingStub> {
-    private UserBlockingStub(io.grpc.Channel channel) {
-      super(channel);
-    }
-
-    private UserBlockingStub(io.grpc.Channel channel,
-        io.grpc.CallOptions callOptions) {
+  public static final class UserBlockingStub extends io.grpc.stub.AbstractBlockingStub<UserBlockingStub> {
+    private UserBlockingStub(
+        io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
 
     @java.lang.Override
-    protected UserBlockingStub build(io.grpc.Channel channel,
-        io.grpc.CallOptions callOptions) {
+    protected UserBlockingStub build(
+        io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new UserBlockingStub(channel, callOptions);
     }
 
@@ -222,19 +233,15 @@ public final class UserGrpc {
 
   /**
    */
-  public static final class UserFutureStub extends io.grpc.stub.AbstractStub<UserFutureStub> {
-    private UserFutureStub(io.grpc.Channel channel) {
-      super(channel);
-    }
-
-    private UserFutureStub(io.grpc.Channel channel,
-        io.grpc.CallOptions callOptions) {
+  public static final class UserFutureStub extends io.grpc.stub.AbstractFutureStub<UserFutureStub> {
+    private UserFutureStub(
+        io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
 
     @java.lang.Override
-    protected UserFutureStub build(io.grpc.Channel channel,
-        io.grpc.CallOptions callOptions) {
+    protected UserFutureStub build(
+        io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new UserFutureStub(channel, callOptions);
     }
 

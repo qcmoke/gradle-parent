@@ -5,9 +5,9 @@ import com.qcmoke.grpc.proto.UserGrpc;
 import com.qcmoke.grpc.proto.UserRequest;
 import com.qcmoke.grpc.proto.UserResponse;
 import io.grpc.stub.StreamObserver;
-import net.devh.springboot.autoconfigure.grpc.server.GrpcService;
+import net.devh.boot.grpc.server.service.GrpcService;
 
-@GrpcService(UserGrpc.class)
+@GrpcService
 public class UserServer extends UserGrpc.UserImplBase {
     @Override
     public void saveUser(UserData request, StreamObserver<UserResponse> responseObserver) {
