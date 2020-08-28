@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+grpc:
+  client:
+    qcmoke-grpc-server:
+      host: 127.0.0.1
+      port: 9090
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true

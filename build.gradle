@@ -1,0 +1,42 @@
+/**
+ * 定义聚合工程全局配置（子工程会继承全局配置的内容，并且所有内容可以省略不写）
+ */
+allprojects {
+
+    apply plugin: 'java'
+
+    group = 'com.qcmoke'
+    version = '0.0.1-SNAPSHOT'
+    sourceCompatibility = '1.8'
+
+    ext {
+        springBootVersion = "1.5.16.RELEASE"
+        grpcVersion = "1.20.0"
+        protocVersion = "3.7.1"
+        grpcSpringBootStarterVersion = '1.4.0.RELEASE'
+    }
+
+    repositories {
+        mavenLocal()
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
+        mavenCentral()
+    }
+    buildscript {
+        repositories {
+            mavenLocal()
+            maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
+            mavenCentral()
+        }
+        dependencies {
+            classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        }
+    }
+    dependencies {
+        //lombok
+        implementation 'org.projectlombok:lombok:1.18.8'
+        annotationProcessor 'org.projectlombok:lombok:1.18.8'
+        testImplementation 'org.projectlombok:lombok:1.18.8'
+        testAnnotationProcessor 'org.projectlombok:lombok:1.18.8'
+
+    }
+}

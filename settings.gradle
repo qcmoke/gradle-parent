@@ -1,0 +1,6 @@
+rootProject.name = 'gradle-parent'
+include 'qcmoke-common'
+include 'qcmoke-protocol'
+include 'qcmoke-grpc-server'
+include 'qcmoke-grpc-client'
+
